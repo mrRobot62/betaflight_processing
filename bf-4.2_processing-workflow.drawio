@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-10T20:35:12.640Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15" etag="1m2unCBth0dbXOKgIrHU" compressed="false" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-10T20:44:24.073Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15" etag="26gHEyiqDcke26G8ml_G" compressed="false" version="13.6.2" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="786" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="262" dy="180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -465,7 +465,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WWWGr8wKS7NOQKFkhAS5-77" value="&lt;font size=&quot;1&quot;&gt;ESC&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;" vertex="1" parent="1">
-          <mxGeometry x="1315" y="970" width="110" height="62.5" as="geometry" />
+          <mxGeometry x="1315" y="930" width="110" height="62.5" as="geometry" />
         </mxCell>
         <mxCell id="WWWGr8wKS7NOQKFkhAS5-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=0;strokeWidth=2;fontSize=12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="WWWGr8wKS7NOQKFkhAS5-78" target="4UiRcspPQ9_xsY6W7M90-56">
           <mxGeometry relative="1" as="geometry" />
@@ -499,6 +499,21 @@
         </mxCell>
         <mxCell id="WWWGr8wKS7NOQKFkhAS5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=12;" edge="1" parent="WWWGr8wKS7NOQKFkhAS5-86" source="WWWGr8wKS7NOQKFkhAS5-4" target="YZIkhoDz0om83u3jAHZu-42">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-87" value="Gyro filters parameter" style="swimlane;fillColor=#FFF4C3;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1020" width="520" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-102" value="&lt;font style=&quot;font-size: 10px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;RPM Notch filters:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;gyro_rpm_notch_harmonics, gyro_rpm_notch_q, gyro_rpm_notch_min&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" vertex="1" parent="WWWGr8wKS7NOQKFkhAS5-87">
+          <mxGeometry x="10" y="30" width="420" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-104" value="&lt;font style=&quot;font-size: 10px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;Dynamic Notch filters:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;dyn_notch_min_hz,&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" vertex="1" parent="WWWGr8wKS7NOQKFkhAS5-87">
+          <mxGeometry x="10" y="50" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-105" value="&lt;font style=&quot;font-size: 10px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;Static Gyro Notches 1+2:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;gyro_notch1_hz,&amp;nbsp;&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" vertex="1" parent="WWWGr8wKS7NOQKFkhAS5-87">
+          <mxGeometry x="10" y="70" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-106" value="&lt;font style=&quot;font-size: 10px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;Dynamic Gyro LowPass :&lt;/u&gt;&lt;/b&gt; &lt;i&gt;gyro_lowpass_type,&amp;nbsp;&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" vertex="1" parent="WWWGr8wKS7NOQKFkhAS5-87">
+          <mxGeometry x="10" y="90" width="230" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
