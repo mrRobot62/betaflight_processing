@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-11T11:04:42.796Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36" etag="iJRgvA2pBiwj34xP0jaL" compressed="false" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-11T11:09:56.523Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36" etag="s_3id6fjv9AqDcavHJII" compressed="false" version="13.6.2" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="1673" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="677" dy="363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -515,17 +515,20 @@
         <mxCell id="WWWGr8wKS7NOQKFkhAS5-87" value="Gyro filters parameter" style="swimlane;fillColor=#FFF4C3;" parent="1" vertex="1">
           <mxGeometry x="720" y="1020" width="460" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="WWWGr8wKS7NOQKFkhAS5-102" value="&lt;font style=&quot;font-size: 10px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;RPM Notch filters:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;gyro_rpm_notch_harmonics, gyro_rpm_notch_q, gyro_rpm_notch_min&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" parent="WWWGr8wKS7NOQKFkhAS5-87" vertex="1">
-          <mxGeometry x="10" y="30" width="420" height="20" as="geometry" />
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-102" value="&lt;font style=&quot;line-height: 100%&quot;&gt;&lt;b style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;RPM Notch filters:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;gyro_rpm_notch_harmonics, gyro_rpm_notch_q, gyro_rpm_notch_min&lt;/font&gt;&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" parent="WWWGr8wKS7NOQKFkhAS5-87" vertex="1">
+          <mxGeometry x="6" y="26" width="390" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="WWWGr8wKS7NOQKFkhAS5-104" value="&lt;font style=&quot;font-size: 10px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;Dynamic Notch filters:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;dyn_notch_min_hz,&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" parent="WWWGr8wKS7NOQKFkhAS5-87" vertex="1">
-          <mxGeometry x="10" y="50" width="210" height="20" as="geometry" />
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-104" value="&lt;font style=&quot;line-height: 100%&quot;&gt;&lt;b style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;Dynamic Notch filters:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;dyn_notch_min_hz, dyn_notch_max_hz, dyn_notch_width_percent, dyn_notch_q&lt;/font&gt;&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" parent="WWWGr8wKS7NOQKFkhAS5-87" vertex="1">
+          <mxGeometry x="6" y="46" width="450" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="WWWGr8wKS7NOQKFkhAS5-105" value="&lt;font style=&quot;font-size: 10px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;Static Gyro Notches 1+2:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;gyro_notch1_hz,&amp;nbsp;&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" parent="WWWGr8wKS7NOQKFkhAS5-87" vertex="1">
-          <mxGeometry x="10" y="70" width="210" height="20" as="geometry" />
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-105" value="&lt;font style=&quot;line-height: 100%&quot;&gt;&lt;b style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;Static Gyro Notches 1+2:&lt;/u&gt;&lt;/b&gt; &lt;i&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;gyro_notch1_hz, gyro_notch1_cutoff, gyro_notch2_hz, gyro_notch2_cutoff&lt;/font&gt;&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" parent="WWWGr8wKS7NOQKFkhAS5-87" vertex="1">
+          <mxGeometry x="6" y="66" width="430" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="WWWGr8wKS7NOQKFkhAS5-106" value="&lt;font style=&quot;font-size: 10px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;Dynamic Gyro LowPass :&lt;/u&gt;&lt;/b&gt; &lt;i&gt;gyro_lowpass_type,&amp;nbsp;&lt;/i&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" parent="WWWGr8wKS7NOQKFkhAS5-87" vertex="1">
-          <mxGeometry x="10" y="90" width="230" height="20" as="geometry" />
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-106" value="&lt;font style=&quot;font-size: 9px ; line-height: 100%&quot;&gt;&lt;b&gt;&lt;u&gt;Dynamic Gyro LowPass :&lt;/u&gt;&lt;/b&gt; &lt;i&gt;gyro_lowpass_type, gyro_lowpass_hz, dyn_lpf_gyro_min_hz,&amp;nbsp;&lt;/i&gt;dyn_lpf_gyro_max_hz&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" parent="WWWGr8wKS7NOQKFkhAS5-87" vertex="1">
+          <mxGeometry x="6" y="86" width="460" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="g_LAPnDDZJ9LDUpSgcGy-15" value="&lt;font style=&quot;line-height: 100%&quot;&gt;&lt;b style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;Static Gyro Lowpass:&lt;/u&gt;&lt;/b&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;&amp;nbsp;dyn_lowpass2_type, gyro_lowpass2_hz&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=12;" vertex="1" parent="WWWGr8wKS7NOQKFkhAS5-87">
+          <mxGeometry x="6" y="106" width="280" height="20" as="geometry" />
         </mxCell>
         <mxCell id="WWWGr8wKS7NOQKFkhAS5-107" value="Dterm filters parameters" style="swimlane;fillColor=#FFF4C3;" parent="1" vertex="1">
           <mxGeometry x="1194" y="1020" width="446" height="130" as="geometry" />
