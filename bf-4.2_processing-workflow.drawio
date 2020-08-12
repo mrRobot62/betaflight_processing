@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-11T19:36:46.347Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15" etag="YX5CIYvJUqgRN-AkVblD" compressed="false" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-12T11:21:15.092Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36" etag="l11afN1jKgpUSpgI5ptg" compressed="false" version="13.6.2" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="511" dy="436" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -265,7 +265,7 @@
         <mxCell id="WWWGr8wKS7NOQKFkhAS5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=12;endFill=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="WWWGr8wKS7NOQKFkhAS5-13" target="YZIkhoDz0om83u3jAHZu-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WWWGr8wKS7NOQKFkhAS5-13" value="D filters" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=12;strokeColor=#FF99CC;" parent="1" vertex="1">
+        <mxCell id="WWWGr8wKS7NOQKFkhAS5-13" value="DTerm filters" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=12;strokeColor=#FF99CC;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="680" y="675" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WWWGr8wKS7NOQKFkhAS5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontSize=12;endFill=0;" parent="1" source="WWWGr8wKS7NOQKFkhAS5-15" target="WWWGr8wKS7NOQKFkhAS5-13" edge="1">
@@ -295,7 +295,7 @@
           </mxGeometry>
         </mxCell>
         <UserObject label="Gyro filters" treeRoot="1" id="WWWGr8wKS7NOQKFkhAS5-18">
-          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=0;rotation=0;strokeColor=#97D077;strokeWidth=2;" parent="1" vertex="1">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=0;rotation=0;strokeColor=#97D077;strokeWidth=3;" parent="1" vertex="1">
             <mxGeometry x="319.39" y="587.5" width="111.22" height="70" as="geometry" />
           </mxCell>
         </UserObject>
