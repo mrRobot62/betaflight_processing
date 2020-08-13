@@ -18,5 +18,5 @@ Up from Version V0.11 layers are included and usable with the HTML version.
 To work with the layers, download `html` file and open with your favorite browser. If your move around with your mouse a pop up toolbox appers at the top with an layer icon.
 At least you have to select ONE layer, if all layers are deactivated you have no chance to reactave accept reloading document ;-)
 
-
+Layers are not available on PDF-Files
 
