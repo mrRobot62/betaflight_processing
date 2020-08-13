@@ -1,9 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2020-08-13T09:00:48.804Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36" etag="Phx-rvlPsO_spL_7VzVS" compressed="false" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-13T09:15:47.349Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36" etag="2_FKSx8mhRirEhGYmOtg" compressed="false" version="13.6.2" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="1185" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2031" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+        <mxCell id="1" style="" parent="0" />
         <mxCell id="WWWGr8wKS7NOQKFkhAS5-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=classic;endFill=0;strokeWidth=2;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;jumpStyle=arc;strokeColor=#FF9933;" parent="1" source="WWWGr8wKS7NOQKFkhAS5-61" target="WWWGr8wKS7NOQKFkhAS5-57" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -827,6 +827,10 @@
         <mxCell id="RuyqhTZgdlnSvw2_jLQb-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeColor=#CDA2BE;" vertex="1" parent="1">
           <mxGeometry x="890" y="700" width="10" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="RuyqhTZgdlnSvw2_jLQb-12" value="Signals - Roll / Pitch / Yaw" parent="0" />
+        <mxCell id="RuyqhTZgdlnSvw2_jLQb-13" value="Signals - Roll / Pitch" parent="0" />
+        <mxCell id="RuyqhTZgdlnSvw2_jLQb-14" value="Signals - Yaw" parent="0" />
+        <mxCell id="RuyqhTZgdlnSvw2_jLQb-15" value="Signals - Throttle" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
