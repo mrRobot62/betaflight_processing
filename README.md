@@ -7,12 +7,12 @@ We try to update this charts and overviews as soon as possible if a new betaflig
 ![BF 4.2 latest graph version](https://github.com/mrRobot62/betaflight_processing/blob/master/bf-4.2_processing-workflow.png)
 (based on BF 4.2)
 
-Open file as HTML-Layer 
-https://github.com/mrRobot62/betaflight_processing/blob/master/bf-4.2_processing-workflow.html
 
 
 | Version | Date | Comment |
 |---|---|---|
+|0.13|17.08.2020| parameter adjustments |
+|0.12|15.08.2020| included layers and some corrections and an additional light version (as layer) is available |
 |0.11|13.08.2020| included layers and some corrections and an additional light version (as layer) is available |
 |0.10|12.08.2020| current version as beta  |
 
