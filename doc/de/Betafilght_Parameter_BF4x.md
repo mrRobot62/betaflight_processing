@@ -3,73 +3,82 @@
 # Inhaltsverzeichnis
 - [Historie](#historie)
 - [Tuning-Parameter](#tuning-parameter)
-- [DSHOT RPM Telemetrie-Daten](#toc_4)
-	- [Allgemeines](#toc_5)
-		- [IN](#toc_7)
-		- [OUT](#toc_8)
-	- [Parameter](#toc_9)
-- [Gyro Filter Parameter](#toc_10)
-	- [Allgemeines](#allgemeines-1)
-		- [IN](#in-1)
-		- [OUT](#out-1)
-		- [Gyro Filterarten](#gyro-filterarten)
-	- [Gyro Filter => GYRO-RPM Notch Filter](#gyro-filter--gyro-rpm-notch-filter)
-		- [Allgemeines](#allgemeines-2)
-		- [Parameter](#parameter-1)
-	- [Gyro Filter => Dynamic-Notch Filter Parameter](#gyro-filter--dynamic-notch-filter-parameter)
-		- [Allgemeines](#allgemeines-3)
-		- [Parameter](#parameter-2)
-	- [Gyro Filter => Static Gyro-Notch Filter (1 und 2)](#gyro-filter--static-gyro-notch-filter-1-und-2)
-		- [Allgemeines](#allgemeines-4)
-		- [Parameter](#parameter-3)
-	- [Gyro Filter => Dynamic Gyro LowPass Filter](#gyro-filter--dynamic-gyro-lowpass-filter)
-		- [Allgemeines](#allgemeines-5)
-		- [Parameter](#parameter-4)
-	- [Gyro Filter => Static Gyro LowPass Filter](#gyro-filter--static-gyro-lowpass-filter)
-		- [Allgemeines](#allgemeines-6)
-		- [IN](#in-2)
-		- [Parameter](#parameter-5)
+- [DSHOT RPM Telemetrie-Daten](#dshot-rpm-telemetrie-daten)
+    + [Allgemeines](#allgemeines)
+      - [IN](#in)
+      - [OUT](#out)
+    + [Parameter](#parameter)
+- [Gyro Filter](#gyro-filter)
+    + [Allgemeines](#allgemeines-1)
+      - [IN](#in-1)
+      - [OUT](#out-1)
+      - [Gyro Filterarten](#gyro-filterarten)
+  * [Gyro Filter => GYRO-RPM Notch Filter](#gyro-filter----gyro-rpm-notch-filter)
+    + [Allgemeines](#allgemeines-2)
+    + [Parameter](#parameter-1)
+  * [Gyro Filter => Dynamic-Notch Filter](#gyro-filter----dynamic-notch-filter)
+    + [Allgemeines](#allgemeines-3)
+    + [Parameter](#parameter-2)
+  * [Gyro Filter => Static Gyro-Notch Filter (1 und 2)](#gyro-filter----static-gyro-notch-filter--1-und-2-)
+    + [Allgemeines](#allgemeines-4)
+    + [Parameter](#parameter-3)
+  * [Gyro Filter => Dynamic Gyro LowPass Filter](#gyro-filter----dynamic-gyro-lowpass-filter)
+    + [Allgemeines](#allgemeines-5)
+    + [Parameter](#parameter-4)
+  * [Gyro Filter => Static Gyro LowPass Filter](#gyro-filter----static-gyro-lowpass-filter)
+    + [Allgemeines](#allgemeines-6)
+      - [IN](#in-2)
+    + [Parameter](#parameter-5)
 - [DTerm Filter](#dterm-filter)
-	- [Allgemeines](#allgemeines-7)
-		- [IN](#in-3)
-		- [OUT](#out-2)
-- [DTerm => Dynamic D lowpass](#dterm--dynamic-d-lowpass)
-	- [Allgemein](#allgemein)
-	- [Parameter](#parameter-6)
-	- [DTerm => Static D lowpass](#dterm--static-d-lowpass)
-		- [Allgemein](#allgemein-1)
-		- [Parameter](#parameter-7)
-	- [DTerm => Static D notch](#dterm--static-d-notch)
-		- [Allgemein](#allgemein-2)
-		- [Parameter](#parameter-8)
+    + [Allgemeines](#allgemeines-7)
+      - [IN](#in-3)
+      - [OUT](#out-2)
+  * [DTerm => Dynamic D lowpass](#dterm----dynamic-d-lowpass)
+    + [Allgemein](#allgemein)
+    + [Parameter](#parameter-6)
+  * [DTerm => Static D lowpass](#dterm----static-d-lowpass)
+    + [Allgemein](#allgemein-1)
+    + [Parameter](#parameter-7)
+  * [DTerm => Static D notch](#dterm----static-d-notch)
+    + [Allgemein](#allgemein-2)
+    + [Parameter](#parameter-8)
 - [Feedforward](#feedforward)
-	- [Allgemeines](#allgemeines-8)
-		- [IN](#in-4)
-		- [OUT](#out-3)
-	- [Parameter](#parameter-9)
+    + [Allgemeines](#allgemeines-8)
+      - [IN](#in-4)
+      - [OUT](#out-3)
+    + [Parameter](#parameter-9)
 - [VBat](#vbat)
-	- [Allgemeines](#allgemeines-9)
-		- [IN](#in-5)
-		- [OUT](#out-4)
-	- [Parameter](#parameter-10)
+    + [Allgemeines](#allgemeines-9)
+      - [IN](#in-5)
+      - [OUT](#out-4)
+    + [Parameter](#parameter-10)
 - [RC-Command](#rc-command)
-	- [Allgemeines](#allgemeines-10)
-		- [IN](#in-6)
-		- [OUT](#out-5)
-	- [Parameter](#parameter-11)
+    + [Allgemeines](#allgemeines-10)
+      - [IN](#in-6)
+      - [OUT](#out-5)
+    + [Parameter](#parameter-11)
+  * [rc\_smoothing\_auto\_smoothness (Default:10)](#rc--smoothing--auto--smoothness--default-10-)
 - [Setpoint](#setpoint)
-	- [Allgemeines](#allgemeines-11)
-		- [IN](#in-7)
-		- [OUT](#out-6)
-	- [Parameter](#parameter-12)
-  
+    + [Allgemeines](#allgemeines-11)
+      - [IN](#in-7)
+      - [OUT](#out-6)
+    + [Parameter](#parameter-12)
+- [ITerm Parameter](#iterm-parameter)
+    + [Allgemeines](#allgemeines-12)
+
 <small><i><a href='https://luciopaiva.com/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+alternative
+
+<small><i><a href='https://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with ecotrust-toc</a></i></small>
+
 
 # Historie
 | Version  |  Datum |  Inhalt |
 |:-:|---|---|
 | 0.1  |  August 2020 | initial  |
 | 0.2  | August 2020  | neu strukturiert  |
+
 
 # Tuning-Parameter
 Nachfolgende eine Reihe der wichtigsten Tuning-Variablen. 
@@ -338,6 +347,9 @@ Feedforward ist dem PID-Controller nachgelagert und unabhängig vom PID. FF vers
 
 # VBat
 ### Allgemeines
+Ab BF 4.2 wir mit VBAT-SAG-Kompensation 
+[Weitere Informationen: ](https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#dynamic-battery-sag-compensation)
+
 #### IN
 
 #### OUT
@@ -347,7 +359,9 @@ Feedforward ist dem PID-Controller nachgelagert und unabhängig vom PID. FF vers
 ### Parameter
 | Parameter  | BF | Default | Bezeichnung  |
 |---|---|---|---| 
-| | | | |
+| vbat_sag_compensation | 4.2 | 100| 100% Kompensation der Batterieentladung |
+| vbat_pid_gain | ?| OFF | alte Version sollte immer OFF sein |
+
 
 # RC-Command 
 
