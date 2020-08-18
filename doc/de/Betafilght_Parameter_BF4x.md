@@ -1,0 +1,512 @@
+# Betaflight BF4.x Tuning-Parameters
+
+# Inhaltsverzeichnis
+- [Historie](#historie)
+- [Tuning-Parameter](#tuning-parameter)
+- [DSHOT RPM Telemetrie-Daten](#toc_4)
+	- [Allgemeines](#toc_5)
+		- [IN](#toc_7)
+		- [OUT](#toc_8)
+	- [Parameter](#toc_9)
+- [Gyro Filter Parameter](#toc_10)
+	- [Allgemeines](#allgemeines-1)
+		- [IN](#in-1)
+		- [OUT](#out-1)
+		- [Gyro Filterarten](#gyro-filterarten)
+	- [Gyro Filter => GYRO-RPM Notch Filter](#gyro-filter--gyro-rpm-notch-filter)
+		- [Allgemeines](#allgemeines-2)
+		- [Parameter](#parameter-1)
+	- [Gyro Filter => Dynamic-Notch Filter Parameter](#gyro-filter--dynamic-notch-filter-parameter)
+		- [Allgemeines](#allgemeines-3)
+		- [Parameter](#parameter-2)
+	- [Gyro Filter => Static Gyro-Notch Filter (1 und 2)](#gyro-filter--static-gyro-notch-filter-1-und-2)
+		- [Allgemeines](#allgemeines-4)
+		- [Parameter](#parameter-3)
+	- [Gyro Filter => Dynamic Gyro LowPass Filter](#gyro-filter--dynamic-gyro-lowpass-filter)
+		- [Allgemeines](#allgemeines-5)
+		- [Parameter](#parameter-4)
+	- [Gyro Filter => Static Gyro LowPass Filter](#gyro-filter--static-gyro-lowpass-filter)
+		- [Allgemeines](#allgemeines-6)
+		- [IN](#in-2)
+		- [Parameter](#parameter-5)
+- [DTerm Filter](#dterm-filter)
+	- [Allgemeines](#allgemeines-7)
+		- [IN](#in-3)
+		- [OUT](#out-2)
+- [DTerm => Dynamic D lowpass](#dterm--dynamic-d-lowpass)
+	- [Allgemein](#allgemein)
+	- [Parameter](#parameter-6)
+	- [DTerm => Static D lowpass](#dterm--static-d-lowpass)
+		- [Allgemein](#allgemein-1)
+		- [Parameter](#parameter-7)
+	- [DTerm => Static D notch](#dterm--static-d-notch)
+		- [Allgemein](#allgemein-2)
+		- [Parameter](#parameter-8)
+- [Feedforward](#feedforward)
+	- [Allgemeines](#allgemeines-8)
+		- [IN](#in-4)
+		- [OUT](#out-3)
+	- [Parameter](#parameter-9)
+- [VBat](#vbat)
+	- [Allgemeines](#allgemeines-9)
+		- [IN](#in-5)
+		- [OUT](#out-4)
+	- [Parameter](#parameter-10)
+- [RC-Command](#rc-command)
+	- [Allgemeines](#allgemeines-10)
+		- [IN](#in-6)
+		- [OUT](#out-5)
+	- [Parameter](#parameter-11)
+- [Setpoint](#setpoint)
+	- [Allgemeines](#allgemeines-11)
+		- [IN](#in-7)
+		- [OUT](#out-6)
+	- [Parameter](#parameter-12)
+  
+<small><i><a href='https://luciopaiva.com/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+# Historie
+| Version  |  Datum |  Inhalt |
+|:-:|---|---|
+| 0.1  |  August 2020 | initial  |
+| 0.2  | August 2020  | neu strukturiert  |
+
+# Tuning-Parameter
+Nachfolgende eine Reihe der wichtigsten Tuning-Variablen. 
+
+Viel mehr Details findet man hier:
+[BF4.2-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes)
+
+> `ACHTUNG`
+>> Bei einem Update von BF <4.2 bitte **_KEIN_** Restore von alten Werten die durch `diff all` gespeichert wurden, importieren. Fangt bei **NULL** an
+
+Viel mehr Details findet man hier:
+[BF4.2-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes)
+
+
+# DSHOT RPM Telemetrie-Daten
+### Allgemeines
+Ab BF 4.0 werden Telemetriedaten des ESCs ausgelesen und analysiert. Diese Informationen sind elementar wichtig für viele nachgelagerte Filtertechniken und für den PID-Controller. Voraussetzung ist, dass man für den ESC ein DSHOT-Protokoll ausgewählt hat
+
+#### IN
+ESC - 
+**Beachten:**
+die aktuelle Firmware des ESCs muss RPM-Telemetrie-Daten verarbeiten können.
+
+#### OUT
+RPM-Daten pro Motor
+
+### Parameter
+Diese Parameter können nicht direkt beeinflußt werden. Zu beachten sind welches **DSHOT** Protokoll verwendet wird.
+
+**Bedenke:** bei DSHOT300 und einer 8k PIDLoop erhältst du nur jede zweite PID-Loop Daten zugesendet. Daraus folgt, du solltest das passende **DSHOT-Protokoll** auf Deine PID-Loop auswählen
+
+* **DSHOT150**: empfohlen bei 2k PIDLoop
+* **DSHOT300**: empfohlen bei 4k PIDLoop
+* **DSHOT600**: empfohlen bei 8k PIDLoop
+* **DSHOT1200**: 8k PIDLoop
+
+
+# Gyro Filter
+### Allgemeines
+Der Gyro ist das zentrale Bauelement auf dem FC und stellt die aktuellen **IST** Flugdaten zur Verfügung. Diese Daten werden dann bezogen auf die **SOLL** Daten (Die RC-Commands) verrechnet, gefiltert dem PIDController zur Verfügung gestellt. Anschließend gemixt und den Motoren als neue.
+
+Jeder GYRO besitzt werkseitig einen internen LowPass-Filter. Je nach Bautyp des Gyros unterscheiden sich wie gut dieser interne Filter tatsächlich ist.
+
+Die Gyro-Filter Parameter umfassen folgende Filterarten
+
+**Bei den weiteren beschriebenen `Gyro Filtern`wird nicht nochmals auf ÌN/OUT`eingegangen.**
+
+#### IN
+`gyro_scaled` Daten direkt aus dem Gyro. 
+
+#### OUT
+Bereitstellung der Daten für nachgelagerte `DTerm-Filter` und als Mix-Daten für den `P-Controller` => `Vorab-Fehler P-Berechnung`
+
+#### Gyro Filterarten
+* Gyro-RPM-Notch Filter 
+	```
+	gyro_rpm_notch_harmonics=3
+	gyro_rpm_notch_q=500
+	gyro_rpm_notch_min=100
+	```
+	
+* Dynamic-Notch Filter
+	```
+	dyn_notch_min_hz
+	dyn_notch_max_hz
+	dyn_notch_width_percent
+	dyn_notch_q	
+	```
+	
+* Static Gyro-Notch Filter (1 und 2)
+	```
+	gyro_notch1_hz
+	gyro_notch1_cutoff
+	gyro_notch2_hz
+	gyro_notch2_cutoff	
+	```
+	
+* Dynamic Gyro LowPass Filter
+	```
+	gyro_lowpass_type
+	gyro_lowpass_hz
+	dyn_lpf_gyro_min_hz
+	dyn_lpf_gyro_max_hz	
+	```
+* Static Gyro LowPass Filter
+	```
+	gyro_lowpass2_type
+	gyro_lowpass2_hz
+	```	
+
+## Gyro Filter => GYRO-RPM Notch Filter
+### Allgemeines
+Der Gyro-RPM Notch Filter nutzt die vom ESC zurückgegeben RPM-Daten und liegt als erste Filterstufe direkt hinter dem `gyro_scaled` Daten.
+
+### Parameter
+| Parameter  |BF|  Default | Bezeichnung  |
+|---|---|---|---|
+| `gyro_rpm_notch_harmonics` | |   3 | Schwingungen treten in wiederkehrenden Amplituden auf. Eine harmonische Schwingung kann durch eine Sinusfunktion beschrieben werden (https://de.wikipedia.org/wiki/Schwingung#Harmonische_Schwingung). **Das bedeutet, dass eine Vibration sich alle xHz wiederholt!** Betaflight generiert somit pro Motor 3 (Anzahl Harmonics) Notch-Filter, somit werden alle Motordaten durch 12 individuellen RPM-Notch-Filter analyisiert und schon vorgefiltert. Diesen Sachverhalt kann man in einer Blackboxauswertung sehr gut sehen (FFT-Spektrogram). |
+|`gyro_rpm_notch_q` | | 500| Der Q-Faktor des Notchfilters gibt die Breite der Kerbe (Notch=Kerbe) an. Je größer die Zahl (max 1000) umso schmaler wird der Notchfilter. Der `Q-Faktor` wird auch als Güte-Faktur  bezeichnet. Je höher die Güte-Faktor (`Q-Faktor`) desto geringer die Dämpfung, desto schmaler der Notch-Filter. Kleine Q-Faktoren vergrößern den RPM-Filter Delay - was unerwünscht ist|
+|`gyro_rpm_notch_min` | |  100 | Beschreibt die untere Grenzfrequenz des Notch-Filters|
+
+##  Gyro Filter => Dynamic-Notch Filter
+### Allgemeines
+Dieser Filter ist dem RPM-Filter nachgelagert und filtern nochmals bestimmte Frequenzen aus. Ohne RPM-Filter wird der Filter als Doppel-Notch Filter betrieben, dies wird über `dyn_notch_width_percent` > 0 definiert. Ist dieser Wert 0, wird nur ein Notch-Filter erzeugt.
+
+Das besondere an dynamic-notch-Filter ist, dass sie dynamisch sich an der aktuellen _RPM_ des Systems orientieren und so laufend rund um den höchsten Frequenzbereich der Motor-Vibrationen arbeiten.
+
+Grundsätzlich gilt, dynamische Notch-Filter haben eine geringere Latenzzeit als statische Notch-Filter. Bei einem gut abgestimmten Copter können andere Low-Pass Filter deaktiviert werden.
+
+### Parameter
+| Parameter  |BF|  Default | Bezeichnung  |
+|---|---|---|---|
+|`dyn_notch_min_hz` ||   |  Beschreibt die untere Grenzfrequenz dieses Notch-Filters in Hz  |
+| `dyn_notch_max_hz`  ||   |  Beschreibt die obere Grenzfrequenz dieses Notch-Filters in Hz |
+| `dyn_notch_width_percent`  ||   | Beschreibt (wenn > 0), wie weit beide Notch-Filter voneinander getrennt sind. Der Prozentsatz berechnet sich aus der Breite des Notch-Filters.|
+| `dyn_notch_q`  ||   | Q-Faktor des Notch-Filters. (siehe hierzu Beschreibung weiter oben  |
+|   |   |   ||
+
+
+##  Gyro Filter => Static Gyro-Notch Filter (1 und 2)
+### Allgemeines
+Zwei statische Notch-Filter für ein bestimmtes Frequenzband. Dieses Frequenzband wird während des Fluges nicht mehr angepasst (statisch).
+
+### Parameter
+| Parameter  |BF|  Default | Bezeichnung  |
+|---|---|---|---|
+| `gyro_notch1_hz` ||  | Center-Frequenz des Notch-Filters
+| `gyro_notch1_cutoff` ||  | **todo** |  | 
+| `gyro_notch2_hz` |  || Center-Frequenz des Notch-Filters | 
+| `gyro_notch2_cutoff` ||  | **todo** | 
+
+
+##  Gyro Filter => Dynamic Gyro LowPass Filter
+### Allgemeines
+Die Auswahl den Dyn-Notchfilters Frequenzbereiches kann über drei Auswahlmöglichkeiten voreingestellt werden
+* **LOW** 	: `dyn_lpf_gyro_max_hz` liegt bei  334hz oder ist 0 (deaktiviert)
+* **MEDIUM** 	: `dyn_lpf_gyro_max_hz` liegt bei 610hz
+* **HIGH** 	: `dyn_lpf_gyro_max_hz` liegt bei > 610hz
+
+Die durchschnittlichen Werte für optimale Werte für diese Ranges liegen 
+* **LOW** : 80-330hz (für Copter mit niedrigen Drehzahlen oder wenn Resonanzen in niedrigen Frequenzen auftreten
+* **MEDIUM** : 140-550hz (für gut eingestellte 5" Copter
+* **HIGH** : 230-800hz (für Copter mit hohen Drehzahlen 2,5" - 3")
+ 
+Ab BF 4.0 wird zusätzlicher `dyn_notch_min_hz` Parameter zur Verfügung gestellt. Dieser Wert fängt den Bereich unterhalb des Dyn-LPF ab und hat seinen Default bei 150Hz.
+
+Um 100Hz Peaks heraus zu filtern muss `LOW` aktiviert werden und der 
+
+### Parameter 
+| Parameter  |BF|  Default | Bezeichnung  |
+|---|---|---|---|
+| `dyn_notch_min_hz`| ||   <todo>| 
+| `gyro_lowpass_type`| || LOW/MEDIUM/HIGH (siehe Beschreibung)| 
+| `gyro_lowpass_hz`| | ||   
+| `dyn_lpf_gyro_min_hz`| ||  (siehe Beschreibung)| 
+| `dyn_lpf_gyro_max_hz`| ||  (siehe Beschreibung) | 
+
+
+##  Gyro Filter => Static Gyro LowPass Filter
+### Allgemeines
+
+#### IN
+Throttle-Daten
+
+### Parameter
+| Parameter  |BF|  Default | Bezeichnung  |
+|---|---|---|---|
+|  |   |   ||  
+
+<X------------------------------------------------>
+
+# DTerm Filter 
+### Allgemeines
+Der DTerm-Filter besitzt eine Reihe von Parametern die dazu genutzt werden, das DTerm-Eingangssignal zu bearbeiten und von Störungen (Vibrations-Frequenzen zu befreien). **Wichtig:**: Der DTerm des PID-Controllers verstärkt Vibrationen, daher ist es wichtig, dass dieses Signal möglichst frei von Störungs- / Vibrationssignalen ist.
+DTerm Filter Daten sind zeitabhängig (`d/dt`)
+
+Folgende DTerm-Filter werden genutzt:
+* **Dynamic D lowpass**
+
+	```
+	dterm_lowpass_type
+	dyn_lpf_dterm_min_hz
+	dyn_lpf_dterm_max_hz
+	dyn_lpf_dterm_curve_expo
+	```
+	
+* **Static D lowpass**
+	```
+	dterm_lowpass2_type
+	dterm_lowpass2_hz
+	```
+	
+* **Static D notch**
+	```
+	dterm_notch_hz
+	dterm_notch_cutoff
+	```
+
+#### IN
+Daten kommen aus den `Gyro Filter` Berechnungen
+
+#### OUT
+Daten gehen direkt an den `D-Controller`
+
+## DTerm => Dynamic D lowpass
+### Allgemein
+
+### Parameter
+
+| Parameter  |BF|  Default | Bezeichnung  |
+|---|---|---|---|
+| `dterm_lowpass_type`  | | | |
+| `dyn_lpf_dterm_min_hz` | | | |
+| `dyn_lpf_dterm_max_hz` | | | |
+| `dyn_lpf_dterm_curve_expo` | | | |
+
+
+## DTerm => Static D lowpass
+### Allgemein
+
+### Parameter
+| Parameter  |BF|  Default | Bezeichnung  |
+|---|---|---|---|
+| `dterm_lowpass2_type `  | | | |
+| `dterm_lowpass2_hz ` | | | |
+
+
+## DTerm => Static D notch
+### Allgemein
+
+### Parameter
+
+| Parameter  |BF|  Default | Bezeichnung  |
+|---|---|---|---|
+| `dterm_notch_hz `  | | | |
+| `dterm_notch_cutoff ` | | | |
+
+# Feedforward
+### Allgemeines
+Feedforward ist dem PID-Controller nachgelagert und unabhängig vom PID. FF verstärkt bzw. wirkt auf Deine Stickbewegung und hilft den Motoren schneller zu reagieren.
+
+**Mehr Infos =>** [Feedforward 2.0](https://github.com/betaflight/betaflight/wiki/Feed-Forward-2.0)
+
+#### IN
+
+#### OUT
+
+
+### Parameter
+
+| Parameter  | BF | Default | Bezeichnung  |
+|---|---|---|---| 
+| `ff_boost` | 4.1 | 15  |  Der Booster verstärkt den gesamten FF-Wert aber zu einem sehr frühen Zeitpunkt und veringert damit ein Delay|  
+| `ff_interpolate_sp` |  4.1 |2 (Average_2) | siehe Anhang der Tabelle| 
+| `ff_spike_limit` |   4.1 |50 | Es wird eine effiziente verzögerungsfreie Dämpfungsmethode verwendet, die Erhöhung des boosts durch Spikes verringert bzw. vermeidet. Liegt der normale Boost-Wert unter dem limit wird er durchgelassen, alles weitere, hohe Boosts die durch Spikes verursacht werden, werden gedämpft.
+| `ff_max_rate_limit` |  4.1 |100  | `ff_max_rate_limit` unterbricht den Feedforward, wenn die Geschwindigkeit mit dem der Stick bewegt wird wahrscheinlich sein Ende des  mechanischen Verfahrensweges erreicht. Dadurch wird ein Überschwingen gerade bei Beginn von Flips reduziert. | 
+| `ff_smooth_factor`  |    4.2 | 37 | Glättungsfaktor für einkommende Signale. Funktioniert wie ein LowPassfilter. 0 = keine Glättung, höhere Werte wie der Defaultwert, erhöhen auch die Latzenzeit und wirkt dem eigentlich FF-Forward entgegen | 
+
+** `ff_interpolate_sp` Ausprägung**
+* OFF
+* ON
+* AVERAGE-2 : passt für die meisten Copter & Freestyler
+* AVERAGE-3 :
+* AVERAGE-4 :  
+
+
+# VBat
+### Allgemeines
+#### IN
+
+#### OUT
+
+
+
+### Parameter
+| Parameter  | BF | Default | Bezeichnung  |
+|---|---|---|---| 
+| | | | |
+
+# RC-Command 
+
+### Allgemeines
+#### IN
+Receiver-Daten Signal
+
+#### OUT
+Daten werden mit den eingstellten `Rates` verrechnet und gelten dann als das angewendete `RCCommand-Eingangs-Signal`
+
+
+### Parameter
+| Parameter  |   BF |Default | Bezeichnung  |
+|---|---|---|---| 
+| `rc_interpolation` |   |   |   |  
+| `rc_interp` |   |   |   |  
+| `rc_inter_ch` |   |   |   |  
+| `rc_inter_int` |   |   |   |  
+
+ 
+## rc\_smoothing\_auto\_smoothness (Default:10)
+rc\-smoothing\-auto\-smoothness setzt wie glatt der die RC-Signale sein sollen.
+Größere Werte erhöhen die Glättung vergrößern aber das RC-Delay. 10 ist optimal für die meisten allgemeinen Flüge. Racer bevorzugen 8 oder sogar 5. Das RC-Delay nimmt zwar ab, dafür können die Motor-Signale etwas unruhiger werden.
+
+
+# Setpoint 
+### Allgemeines
+In der weiteren Berarbietung der Eingangssignale werden diese als `Setpoint`bezeichnet und spiegeln das RC-Signal wieder allerdings durch eine Reihe von Parametern geglättet
+
+#### IN
+Aufbereitetes RC-Command Signal
+
+#### OUT
+Daten die mittels `setpoint_smoothing` nochmals geglättet werden werden an 
+* `Vorab-Fehler P-Berechnung`
+* `d/dt`
+
+### Parameter
+Setpoint/Setpoint smoothing beinhaltet eine Reihe von Parametern die das eigentlich Signal nochmals aufbereiten.
+
+| Parameter  |   BF |Default | Bezeichnung  |
+|---|---|---|---| 
+| `rc_smoothing_type` |   |   |  |
+| `rc_smoothing_auto_smoothness` | | 10 |  setzt wie glatt der die RC-Signale sein sollen. Größere Werte erhöhen die Glättung vergrößern aber das RC-Delay. 10 ist optimal für die meisten allgemeinen Flüge. Racer bevorzugen 8 oder sogar 5. Das RC-Delay nimmt zwar ab, dafür können die Motor-Signale etwas unruhiger werden |  
+| `rc_smoothing_input_Hz` |   | |   |  
+| `rc_smoothing_input_type` |   | |   |  
+|
+
+# ITerm Parameter
+### Allgemeines
+ITerm Parameter dienen dazu das I-Signal die PID-Controllers entweder vor der Bearbeitung von ITerm oder nach ITerm zu beeinflußen.
+
+Insbesondere sollen hier Peaks im ITerm eliminiert werden.
+
+Die Nachfolgende Tabelle beinhaltet zwei zusätzliche Spalten **IN** und **OUT** sie bezeichnen woher die Daten kommen (`IN`) und wer sie verwertet (`OUT`)
+
+| Parameter  | BF |   IN | OUT | Default | Bezeichnung  |
+|---|---|---| ---| ---|---|
+| `iterm_windup` | | MIXER | ITerm | |iterm_windup ist eine alte Methode zur Unterdrückung der iTerm-Akkumulation, wenn das Motordifferential einen benutzerdefinierten Schwellenwert überschreitet. In BF 4.2 wirkt `iterm_windup` nur noch auf YAW |
+| `iterm_relax` | | ITERM|PID_SUM||`iterm_relax` hat `iterm_windup` zur Vermeidung  von I-Anhäufungen auf Mini-Quads weitgehend ersetzt. `iterm_relax`ist hauptsächlich zur Vermeidung von bounce-backs |
+| `iterm_relax_type` | | ITERM|PID_SUM|||
+| `iterm_relax_cutoff` | | ITERM|PID_SUM||Wenn der Pilot eine Änderung der Drehgeschwindigkeit anfordert, die für das Quad zu schnell ist, eilt das Gyrosignal dem Sollwert (SetPoint) hinterher und daraus entsteht ein mehr oder minder großes Fehlersignal. Der I-Term versucht nun diesen Fehler zu akkumulieren (aufsummieren) und versucht diese zu korrigieren. `iterm_relax` versucht nun diese Akkumulation zu kontrollieren. Reicht der `iterm_relax` nicht aus, sammeln sich die ITerm Fehler immer mehr an. Stoppt nun der Pilot seine Stickbewegung (z.B. in einem Flip), dann wird all der angesammelte ITerm-Fehler eine Gegenbewegung des Copters verursachen (BounceBack), der dann langsam ausklingen wird bis er wieder auf 0 ist. `iterm_relax` für Flip & Rolls und `item_windup` für YAW, versuchen diese Bouncebacks zu kontrollieren und abzumildern. `item_relax_cutoff begrennzt die ITerm`Akkumulation. |
+| `iterm_rotation` | | GYRO-Filter|ITerm|||
+
+
+# ------------------ ALT -----------------------------------
+
+
+
+# FILTER 
+
+## Gyro RPM Filter
+Der Gyro RPM-Filter liegt vor dem PID-Controller und filtert das Gyro-Signal
+
+### gyro\_rpm\_notch\_harmonics (Default: 3)
+Schwingungen treten in wiederkehrenden Amplituden. Eine harmonische Schwingung kann durch eine Sinusfunktion beschrieben werden (https://de.wikipedia.org/wiki/Schwingung#Harmonische_Schwingung)
+
+In der Defaut-Einstellungen wird der Filter auf drei harmonische Schwingungen ausgelegt.
+
+### gyro\_rpm\_notch\_q (Default : 500)
+Gibt die Breite des PRM-Notchfilters an. Je größer die Zahl (max 1000) umso schmaler wird der Notchfilter. Der `Q-Faktor` wird auch als Güte-Faktur (`Q-Faktor`) bezeichnet. Je höher die Güte-Faktor (`Q-Faktor`) desto geringer die Dämpfung, desto schmaler der Notch-Filter. Kleine Q-Faktoren vergrößern den RPM-Filter Delay - was unerwünscht ist.
+
+### gyro\_rpm\_notch\_min (Default: 100)
+Unter Grenzfrequenz des Notch-Filters
+ 
+## Dyn Notch-Filter 
+**Generell gilt:** Notch-Filter werden auch als Säuberungsfilter bezeichnet
+Der Dynamische Notch-Filter ist bei aktivierten RPM-Filter ein nachgelagerter Filter der weitere Resonanzen aus dem Motorsignal herausfiltert. Die Grenzfrequenzen können über min/max eingestellt werden.
+
+
+
+Die Auswahl den Dyn-Notchfilters Frequenzbereiches kann über drei Auswahlmöglichkeiten voreingestellt werden
+* **LOW** 	: `dyn_lpf_gyro_max_hz` liegt bei  334hz oder ist 0 (deaktiviert)
+* **MEDIUM** 	: `dyn_lpf_gyro_max_hz` liegt bei 610hz
+* **HIGH** 	: `dyn_lpf_gyro_max_hz` liegt bei > 610hz
+
+Die durchschnittlichen Werte für optimale Werte für diese Ranges liegen 
+* **LOW** : 80-330hz (für Copter mit niedrigen Drehzahlen oder wenn Resonanzen in niedrigen Frequenzen auftreten
+* **MEDIUM** : 140-550hz (für gut eingestellte 5" Copter
+* **HIGH** : 230-800hz (für Copter mit hohen Drehzahlen 2,5" - 3")
+ 
+Ab BF 4.0 wird zusätzlicher `dyn_notch_min_hz` Parameter zur Verfügung gestellt. Dieser Wert fängt den Bereich unterhalb des Dyn-LPF ab und hat seinen Default bei 150Hz.
+
+Um 100Hz Peaks heraus zu filtern muss `LOW` aktiviert werden und der `dyn_notch_min_hz`  dddd
+
+
+### dyn\_notch\-q:120
+Gibt die Breite des Notchfilters an. Werte zwischen 120 und 1000. je größer die Zahl umso schmaler der Notch-Filter (Siehe auch `gyro_rpm_notch_q`). Kleine Werte erhöhen den Delay, das sollte nach Möglichkeit vermieden werden.
+
+<img src="/Users/bernhardklein/Library/Mobile Documents/com~apple~CloudDocs/FPV/img/filter_dyn_notch_q-high.png" alt="drawing" style="width:800px;"/>
+
+### dyn\-notch\-width\-percent (Defaut: 0, bei Nutzung von RPM-Filtern)
+Ursprünglich ist der Dyn\-Notch Filter so ausgelegt, dass er zwei Notch-Filter abbildet um Motor-Peaks, welche in regelmäßigen Intervallen kommen (Harmonics) zu reduzieren. Durch den Prozentsatz wird der Abstand dieser beiden Notch-Filter definiert. 
+
+Wenn RPM-Filter genutzt werden, dann **sollte dieser Wert auf 0** stehen, damit wird der zweite Notch-Filter deaktiviert und es wird kein unnötiger Delay (durch einen zweiten Filter) erzeugt.
+
+**Ab BF4.1 sollte immer RPM-Filter genutzt werden**
+
+### dyn\-notch\-max\-hz (Default: )
+Endfrequenz des Filters
+
+### dyn\-notch\-min\-hz (Default: 150)
+Startfrequenz des Filters
+
+## Dynamic LowPass Filtering
+Ein LP-Filter filtert (dämpft) Frequenzen die über der `_min_hz` Frequenz liegen fast vollständig. 
+LowPass-Filtering funktioniert am effektivsten wenn es auf `BIQUAD` steht.
+
+```
+set dyn_lpf_gyro_min_hz = 150
+set dyn_lpf_gyro_max_hz = 600
+```
+`dyn_lpf_gyro_min_hz` Unterste Grenzfrequenz des LowPass-Filters ab der gefiltert wird.
+
+`dyn_lpf_gyro_max_hz` Obere Grenzfrequenz des LowPass-Filters. Diese obere Grenzfrequenz beschreibt, bis wieviel Herz dieser LPF filtert. Diese Frequenz sollte bei der max RPM-Frequenz der Motoren liegen. Bei einem 5" Copter liegt das zwischen **450-500hz**, 2,5"/3" copter mit kleineren Props drehen deutlich höher und daher liegt die obere Grenzfrequenz dort zwischen 600-650hz. Am besten prüft man dies bei seinem Copter.
+
+Die maximale RPM der Motoren kann man sich über OSD anzeigen lassen oder über eine Blackboxauswertung .
+
+Um eine Auswertung per OSD zu gewährleisten kann folgende Einstellung verwendet werden `set osd_stat_max_fft = ON`. Die Max-RPM wird dann nach dem Disarmen als Statistik angezeigt
+
+LowPass filter ausschalten
+```
+set dyn_lpf_gyro_min_hz = 0
+set dyn_lpf_gyro_max_hz = 600
+```
+## Dynamic D-Filtering
+Der `D-Term` ist sehr empfindlich auf Vibrationen und verstärkt diese auch noch. Um diesen Sachverhalt einzudämmen werden diverse Filtertechniken ab BF 4.0 eingesetzt um das D-Signal zu säubern.
+
+D verstärkt höhere Frequenzen, der D-Anteil wird aber dringend benöigt um Vibrationen zwischen 30-80hz (Z.B. Propwash) auszugleichen. Das bedeutet wir benötigen soviel wie möglich D-Anteil bis 100hz und so wenig wie möglich über 100hz.
+
+DTerm-Filter sollten immer in der ersten Stufe als `BIQUAD` und in der zweiten Stufe als `PT` eingestellt werden.
+
+Stufe 1 liegt in der Regel zwischen 150-250hz (mit der unteren Frequenz beginnen)
+
+
+## Static Notch Filter
+
+
+## Static LowPass Filter
+
+
+## 
