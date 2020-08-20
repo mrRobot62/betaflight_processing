@@ -1,6 +1,6 @@
 # Betaflight BF4.x Tuning-Parameters
 
-![LunaX](https://github.com/mrRobot62/betaflight_processing/blob/master/doc/de/images/LunaX_Font.png)
+![LunaX](../images/LunaX_Font.png)
 
 
 
