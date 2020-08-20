@@ -96,8 +96,8 @@ Viel mehr Details findet man hier:
 Weitere Tuning-Tips findest du im BF-Wiki der jeweiligen Versionen:
 * [BF4.2-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes)
 * [BF4.1-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.1-Tuning-Notes)
-* [[BF4.0-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.0-Tuning-Notes)
-* [[BF4.0-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/3.5-tuning-notes)
+* [BF4.0-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.0-Tuning-Notes)
+* [BF4.0-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/3.5-tuning-notes)
 
 # DSHOT RPM Telemetrie-Daten
 ### Allgemeines
