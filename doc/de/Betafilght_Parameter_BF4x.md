@@ -1,5 +1,7 @@
 # Betaflight BF4.x Tuning-Parameters
 
+![LunaX](/images/LunaX_Font.png)
+
 # Inhaltsverzeichnis
 - [Historie](#historie)
 - [Tuning-Parameter](#tuning-parameter)
@@ -89,9 +91,12 @@ Viel mehr Details findet man hier:
 > `ACHTUNG`
 >> Bei einem Update von BF <4.2 bitte **_KEIN_** Restore von alten Werten die durch `diff all` gespeichert wurden, importieren. Fangt bei **NULL** an
 
-Viel mehr Details findet man hier:
-[BF4.2-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes)
-
+## Betaflight - Tuning-Tips
+Weitere Tuning-Tips findest du im BF-Wiki der jeweiligen Versionen:
+* [BF4.2-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes)
+* [BF4.1-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.1-Tuning-Notes)
+* [[BF4.0-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/4.0-Tuning-Notes)
+* [[BF4.0-Tuning-Notes](https://github.com/betaflight/betaflight/wiki/3.5-tuning-notes)
 
 # DSHOT RPM Telemetrie-Daten
 ### Allgemeines
@@ -133,7 +138,10 @@ Die Gyro-Filter Parameter umfassen folgende Filterarten
 Bereitstellung der Daten für nachgelagerte `DTerm-Filter` und als Mix-Daten für den `P-Controller` => `Vorab-Fehler P-Berechnung`
 
 #### Gyro Filterarten
+Es wird unterschieden zwischen den Gyro-RPM Filtern, einem Dynamic NotchFilter und Statich Notichfilter 1+2, einem Dynamsiche LowPassfilter und einem statischen Lowpassfilter.
+
 * Gyro-RPM-Notch Filter 
+
 	```
 	gyro_rpm_notch_harmonics=3
 	gyro_rpm_notch_q=500
@@ -172,6 +180,8 @@ Bereitstellung der Daten für nachgelagerte `DTerm-Filter` und als Mix-Daten fü
 ## Gyro Filter => GYRO-RPM Notch Filter
 ### Allgemeines
 Der Gyro-RPM Notch Filter nutzt die vom ESC zurückgegeben RPM-Daten und liegt als erste Filterstufe direkt hinter dem `gyro_scaled` Daten.
+
+[BF 4.1/4.2 Bidirectional DSHOT and RPM Filter Guide](https://github.com/betaflight/betaflight/wiki/Bidirectional-DSHOT-and-RPM-Filter#Tuning)
 
 ### Parameter
 | Parameter  |BF|  Default | Bezeichnung  |
@@ -232,9 +242,9 @@ Um 100Hz Peaks heraus zu filtern muss `LOW` aktiviert werden und der
 |---|---|---|---|
 | `dyn_notch_min_hz`| ||   <todo>| 
 | `gyro_lowpass_type`| || LOW/MEDIUM/HIGH (siehe Beschreibung)| 
-| `gyro_lowpass_hz`| | ||   
-| `dyn_lpf_gyro_min_hz`| ||  (siehe Beschreibung)| 
-| `dyn_lpf_gyro_max_hz`| ||  (siehe Beschreibung) | 
+| `gyro_lowpass_hz`| | | Static Gyro LPF, sind dyn_lpf gesetzt, dann ist der Static LPF deaktiviert|   
+| `dyn_lpf_gyro_min_hz`| || untere Grenzfrequenz es DynLPF| 
+| `dyn_lpf_gyro_max_hz`| || obere Grenzfrequenz des DynLPF | 
 
 
 ##  Gyro Filter => Static Gyro LowPass Filter
@@ -246,13 +256,22 @@ Throttle-Daten
 ### Parameter
 | Parameter  |BF|  Default | Bezeichnung  |
 |---|---|---|---|
-|  |   |   ||  
+| gyro_lowpass2_type | 4.0 | PT1/BIQUAD  ||  
+| gyro_lowpass2_hz | 4.0 |   | unter Grenzfrequenz des LPF in Hz, wenn auf 0, dann ist der LPF deaktiviert|  
+
+	
+	
+
 
 <X------------------------------------------------>
 
 # DTerm Filter 
 ### Allgemeines
 Der DTerm-Filter besitzt eine Reihe von Parametern die dazu genutzt werden, das DTerm-Eingangssignal zu bearbeiten und von Störungen (Vibrations-Frequenzen zu befreien). **Wichtig:**: Der DTerm des PID-Controllers verstärkt Vibrationen, daher ist es wichtig, dass dieses Signal möglichst frei von Störungs- / Vibrationssignalen ist.
+
+D verstärkt höhere Frequenzen, der D-Anteil wird aber dringend benöigt um Vibrationen zwischen 30-80hz (Z.B. Propwash) auszugleichen. Das bedeutet wir benötigen soviel wie möglich D-Anteil bis 100hz und so wenig wie möglich über 100hz.
+DTerm-Filter sollten immer in der ersten Stufe als BIQUAD und in der zweiten Stufe als PT eingestellt werden. 
+
 DTerm Filter Daten sind zeitabhängig (`d/dt`)
 
 Folgende DTerm-Filter werden genutzt:
@@ -285,29 +304,19 @@ Daten gehen direkt an den `D-Controller`
 
 ## DTerm => Dynamic D lowpass
 ### Allgemein
+Dynamischer Lowpass filter für den DTerm
 
 ### Parameter
 
 | Parameter  |BF|  Default | Bezeichnung  |
 |---|---|---|---|
-| `dterm_lowpass_type`  | | | |
-| `dyn_lpf_dterm_min_hz` | | | |
-| `dyn_lpf_dterm_max_hz` | | | |
-| `dyn_lpf_dterm_curve_expo` | | | |
-
-
-## DTerm => Static D lowpass
-### Allgemein
-
-### Parameter
-| Parameter  |BF|  Default | Bezeichnung  |
-|---|---|---|---|
-| `dterm_lowpass2_type `  | | | |
-| `dterm_lowpass2_hz ` | | | |
+| `dterm_lowpass_type`  | 4.0 | | PT1 / BIQUAD, sollte auf BIQUAD für LPF 1 stehen, LPF2 = PT1 |
+| `dyn_lpf_dterm_min_hz` | 4.0 | | LowPass min Hz |
+| `dterm_lowpass2_hz ` | 4.0 | | LowPass2 min Hz|
 
 
 ## DTerm => Static D notch
-### Allgemein
+### AllgemeiHz
 
 ### Parameter
 
@@ -320,7 +329,10 @@ Daten gehen direkt an den `D-Controller`
 ### Allgemeines
 Feedforward ist dem PID-Controller nachgelagert und unabhängig vom PID. FF verstärkt bzw. wirkt auf Deine Stickbewegung und hilft den Motoren schneller zu reagieren.
 
-**Mehr Infos =>** [Feedforward 2.0](https://github.com/betaflight/betaflight/wiki/Feed-Forward-2.0)
+**Mehr Infos zu Feedforward** 
+
+* [Feedforward BF 4.1](https://github.com/betaflight/betaflight/wiki/4.1-Tuning-Notes#feed-forward-boost)
+* [Feedforward 2.0 BF 4.2](https://github.com/betaflight/betaflight/wiki/Feed-Forward-2.0)
 
 #### IN
 
@@ -427,100 +439,3 @@ Die Nachfolgende Tabelle beinhaltet zwei zusätzliche Spalten **IN** und **OUT**
 | `iterm_rotation` | | GYRO-Filter|ITerm|||
 
 
-# ------------------ ALT -----------------------------------
-
-
-
-# FILTER 
-
-## Gyro RPM Filter
-Der Gyro RPM-Filter liegt vor dem PID-Controller und filtert das Gyro-Signal
-
-### gyro\_rpm\_notch\_harmonics (Default: 3)
-Schwingungen treten in wiederkehrenden Amplituden. Eine harmonische Schwingung kann durch eine Sinusfunktion beschrieben werden (https://de.wikipedia.org/wiki/Schwingung#Harmonische_Schwingung)
-
-In der Defaut-Einstellungen wird der Filter auf drei harmonische Schwingungen ausgelegt.
-
-### gyro\_rpm\_notch\_q (Default : 500)
-Gibt die Breite des PRM-Notchfilters an. Je größer die Zahl (max 1000) umso schmaler wird der Notchfilter. Der `Q-Faktor` wird auch als Güte-Faktur (`Q-Faktor`) bezeichnet. Je höher die Güte-Faktor (`Q-Faktor`) desto geringer die Dämpfung, desto schmaler der Notch-Filter. Kleine Q-Faktoren vergrößern den RPM-Filter Delay - was unerwünscht ist.
-
-### gyro\_rpm\_notch\_min (Default: 100)
-Unter Grenzfrequenz des Notch-Filters
- 
-## Dyn Notch-Filter 
-**Generell gilt:** Notch-Filter werden auch als Säuberungsfilter bezeichnet
-Der Dynamische Notch-Filter ist bei aktivierten RPM-Filter ein nachgelagerter Filter der weitere Resonanzen aus dem Motorsignal herausfiltert. Die Grenzfrequenzen können über min/max eingestellt werden.
-
-
-
-Die Auswahl den Dyn-Notchfilters Frequenzbereiches kann über drei Auswahlmöglichkeiten voreingestellt werden
-* **LOW** 	: `dyn_lpf_gyro_max_hz` liegt bei  334hz oder ist 0 (deaktiviert)
-* **MEDIUM** 	: `dyn_lpf_gyro_max_hz` liegt bei 610hz
-* **HIGH** 	: `dyn_lpf_gyro_max_hz` liegt bei > 610hz
-
-Die durchschnittlichen Werte für optimale Werte für diese Ranges liegen 
-* **LOW** : 80-330hz (für Copter mit niedrigen Drehzahlen oder wenn Resonanzen in niedrigen Frequenzen auftreten
-* **MEDIUM** : 140-550hz (für gut eingestellte 5" Copter
-* **HIGH** : 230-800hz (für Copter mit hohen Drehzahlen 2,5" - 3")
- 
-Ab BF 4.0 wird zusätzlicher `dyn_notch_min_hz` Parameter zur Verfügung gestellt. Dieser Wert fängt den Bereich unterhalb des Dyn-LPF ab und hat seinen Default bei 150Hz.
-
-Um 100Hz Peaks heraus zu filtern muss `LOW` aktiviert werden und der `dyn_notch_min_hz`  dddd
-
-
-### dyn\_notch\-q:120
-Gibt die Breite des Notchfilters an. Werte zwischen 120 und 1000. je größer die Zahl umso schmaler der Notch-Filter (Siehe auch `gyro_rpm_notch_q`). Kleine Werte erhöhen den Delay, das sollte nach Möglichkeit vermieden werden.
-
-<img src="/Users/bernhardklein/Library/Mobile Documents/com~apple~CloudDocs/FPV/img/filter_dyn_notch_q-high.png" alt="drawing" style="width:800px;"/>
-
-### dyn\-notch\-width\-percent (Defaut: 0, bei Nutzung von RPM-Filtern)
-Ursprünglich ist der Dyn\-Notch Filter so ausgelegt, dass er zwei Notch-Filter abbildet um Motor-Peaks, welche in regelmäßigen Intervallen kommen (Harmonics) zu reduzieren. Durch den Prozentsatz wird der Abstand dieser beiden Notch-Filter definiert. 
-
-Wenn RPM-Filter genutzt werden, dann **sollte dieser Wert auf 0** stehen, damit wird der zweite Notch-Filter deaktiviert und es wird kein unnötiger Delay (durch einen zweiten Filter) erzeugt.
-
-**Ab BF4.1 sollte immer RPM-Filter genutzt werden**
-
-### dyn\-notch\-max\-hz (Default: )
-Endfrequenz des Filters
-
-### dyn\-notch\-min\-hz (Default: 150)
-Startfrequenz des Filters
-
-## Dynamic LowPass Filtering
-Ein LP-Filter filtert (dämpft) Frequenzen die über der `_min_hz` Frequenz liegen fast vollständig. 
-LowPass-Filtering funktioniert am effektivsten wenn es auf `BIQUAD` steht.
-
-```
-set dyn_lpf_gyro_min_hz = 150
-set dyn_lpf_gyro_max_hz = 600
-```
-`dyn_lpf_gyro_min_hz` Unterste Grenzfrequenz des LowPass-Filters ab der gefiltert wird.
-
-`dyn_lpf_gyro_max_hz` Obere Grenzfrequenz des LowPass-Filters. Diese obere Grenzfrequenz beschreibt, bis wieviel Herz dieser LPF filtert. Diese Frequenz sollte bei der max RPM-Frequenz der Motoren liegen. Bei einem 5" Copter liegt das zwischen **450-500hz**, 2,5"/3" copter mit kleineren Props drehen deutlich höher und daher liegt die obere Grenzfrequenz dort zwischen 600-650hz. Am besten prüft man dies bei seinem Copter.
-
-Die maximale RPM der Motoren kann man sich über OSD anzeigen lassen oder über eine Blackboxauswertung .
-
-Um eine Auswertung per OSD zu gewährleisten kann folgende Einstellung verwendet werden `set osd_stat_max_fft = ON`. Die Max-RPM wird dann nach dem Disarmen als Statistik angezeigt
-
-LowPass filter ausschalten
-```
-set dyn_lpf_gyro_min_hz = 0
-set dyn_lpf_gyro_max_hz = 600
-```
-## Dynamic D-Filtering
-Der `D-Term` ist sehr empfindlich auf Vibrationen und verstärkt diese auch noch. Um diesen Sachverhalt einzudämmen werden diverse Filtertechniken ab BF 4.0 eingesetzt um das D-Signal zu säubern.
-
-D verstärkt höhere Frequenzen, der D-Anteil wird aber dringend benöigt um Vibrationen zwischen 30-80hz (Z.B. Propwash) auszugleichen. Das bedeutet wir benötigen soviel wie möglich D-Anteil bis 100hz und so wenig wie möglich über 100hz.
-
-DTerm-Filter sollten immer in der ersten Stufe als `BIQUAD` und in der zweiten Stufe als `PT` eingestellt werden.
-
-Stufe 1 liegt in der Regel zwischen 150-250hz (mit der unteren Frequenz beginnen)
-
-
-## Static Notch Filter
-
-
-## Static LowPass Filter
-
-
-## 
