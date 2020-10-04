@@ -14,8 +14,10 @@ We try to update this charts and overviews as soon as possible if a new betaflig
 |0.13|17.08.2020| parameter adjustments, feedforward 2.0 |
 |0.12|15.08.2020| included layers and some corrections and an additional light version (as layer) is available |
 |0.11|13.08.2020| included layers and some corrections and an additional light version (as layer) is available |
-|0.10|12.08.2020| current version as beta  |
-|0.11|05.10.2020| latest version |
+|0.10|12.08.2020| current version as beta1  |
+|0.11|12.08.2020| current version as beta2  |
+|0.12|31.08.2020| current version as beta3  |
+|0.13|05.10.2020| export all files again |
 
 ## Notes
 Up from Version V0.11 layers are included and usable with the HTML version.
