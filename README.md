@@ -11,6 +11,7 @@ We try to update this charts and overviews as soon as possible if a new betaflig
 
 | Version | Date | Comment |
 |---|---|---|
+|0.14|||
 |0.13|17.08.2020| parameter adjustments, feedforward 2.0 |
 |0.12|15.08.2020| included layers and some corrections and an additional light version (as layer) is available |
 |0.11|13.08.2020| included layers and some corrections and an additional light version (as layer) is available |
