@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-10T10:27:50.948Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15" etag="z68sZtqQfpS1dBtR3OwB" compressed="false" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-10T11:02:24.405Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15" etag="Du3mtQI7SEAp30_8QzSr" compressed="false" version="13.7.9" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="262" dy="188" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="449" dy="308" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="RuyqhTZgdlnSvw2_jLQb-54" value="Backup - V0.10" style="locked=1;" parent="0" visible="0" />
@@ -886,11 +886,11 @@
           <mxGeometry x="25" y="85" width="45" height="30" as="geometry" />
         </mxCell>
         <UserObject label="(3.4)" link="https://github.com/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4#throttle-boost" id="V3Wwiagqi8VHm06WQAAS-55">
-          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;perimeterSpacing=0;glass=0;sketch=0;shadow=0;" vertex="1" parent="RuyqhTZgdlnSvw2_jLQb-424">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;perimeterSpacing=0;glass=0;sketch=0;shadow=0;" parent="RuyqhTZgdlnSvw2_jLQb-424" vertex="1">
             <mxGeometry x="200" y="53" width="40" height="20" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="V3Wwiagqi8VHm06WQAAS-56" value="Links" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="RuyqhTZgdlnSvw2_jLQb-424">
+        <mxCell id="V3Wwiagqi8VHm06WQAAS-56" value="Links" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="RuyqhTZgdlnSvw2_jLQb-424" connectable="0" vertex="1">
           <mxGeometry x="219.99809523809517" y="43" as="geometry">
             <mxPoint x="-3" y="-3" as="offset" />
           </mxGeometry>
@@ -1398,7 +1398,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="RuyqhTZgdlnSvw2_jLQb-513" value="Feedforward 2.0 (4.1)" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=12;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
+        <mxCell id="RuyqhTZgdlnSvw2_jLQb-513" value="Feedforward 2.0" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=12;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
           <mxGeometry x="930" y="210" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RuyqhTZgdlnSvw2_jLQb-516" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeWidth=2;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeColor=#FF9933;" parent="RuyqhTZgdlnSvw2_jLQb-265" source="RuyqhTZgdlnSvw2_jLQb-517" target="RuyqhTZgdlnSvw2_jLQb-513" edge="1">
@@ -1685,7 +1685,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RuyqhTZgdlnSvw2_jLQb-520" value="&lt;div class=&quot;page&quot; title=&quot;Page 1&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot;&gt;&lt;div class=&quot;column&quot;&gt;&lt;div class=&quot;page&quot; title=&quot;Page 1&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot; style=&quot;font-size: 10px&quot;&gt;&lt;div class=&quot;column&quot; style=&quot;line-height: 50%&quot;&gt;&lt;p&gt;&lt;span&gt;rc_smoothing_auto_smoothness&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;rc_smoothing_derivative_type&lt;/p&gt;&lt;p&gt;rc_smoothing_derivative_Hz&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeWidth=1;size=0.07692307692307693;fillColor=#FFFFFF;strokeColor=#CDA2BE;" parent="nkRY5VjRm2YGxFezUmiJ-182" vertex="1">
-          <mxGeometry x="1090" y="120" width="180" height="60" as="geometry" />
+          <mxGeometry x="1090" y="120" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="nkRY5VjRm2YGxFezUmiJ-0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;strokeWidth=2;" parent="nkRY5VjRm2YGxFezUmiJ-182" source="RuyqhTZgdlnSvw2_jLQb-515" target="RuyqhTZgdlnSvw2_jLQb-776" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1784,11 +1784,11 @@
         <mxCell id="uULmvkviQeNw6U8qVAct-3" value="&lt;div class=&quot;page&quot; title=&quot;Page 1&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot;&gt;&lt;div class=&quot;column&quot;&gt;&lt;div class=&quot;page&quot; title=&quot;Page 1&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot; style=&quot;font-size: 10px&quot;&gt;&lt;div class=&quot;column&quot; style=&quot;line-height: 50%&quot;&gt;&lt;p&gt;ff_smooth_factor&lt;/p&gt;&lt;p&gt;(4.2)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeWidth=1;size=0.07692307692307693;fillColor=none;" parent="nkRY5VjRm2YGxFezUmiJ-182" vertex="1">
           <mxGeometry x="1070" y="320" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uULmvkviQeNw6U8qVAct-5" value="&lt;div class=&quot;page&quot; title=&quot;Page 1&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot;&gt;&lt;div class=&quot;column&quot;&gt;&lt;div class=&quot;page&quot; title=&quot;Page 1&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot; style=&quot;font-size: 10px&quot;&gt;&lt;div class=&quot;column&quot; style=&quot;line-height: 50%&quot;&gt;&lt;p&gt;ff_interpolate_sp&lt;/p&gt;&lt;p&gt;ff_spike_limit&lt;/p&gt;&lt;p&gt;ff_max_rate_limit&lt;br&gt;&lt;/p&gt;&lt;p&gt;(4.1)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeWidth=1;size=0.07692307692307693;fillColor=#FFFFFF;" parent="nkRY5VjRm2YGxFezUmiJ-182" vertex="1">
-          <mxGeometry x="940" y="120" width="130" height="60" as="geometry" />
+        <mxCell id="uULmvkviQeNw6U8qVAct-5" value="&lt;div class=&quot;page&quot; title=&quot;Page 1&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot;&gt;&lt;div class=&quot;column&quot;&gt;&lt;div class=&quot;page&quot; title=&quot;Page 1&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot; style=&quot;font-size: 10px&quot;&gt;&lt;div class=&quot;column&quot; style=&quot;line-height: 50%&quot;&gt;&lt;p&gt;ff_spike_limit&lt;/p&gt;&lt;p&gt;fff_interpolate_sp&lt;/p&gt;&lt;p&gt;f_max_rate_limit&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeWidth=1;size=0.07692307692307693;fillColor=#FFFFFF;" parent="nkRY5VjRm2YGxFezUmiJ-182" vertex="1">
+          <mxGeometry x="940" y="120" width="130" height="45" as="geometry" />
         </mxCell>
         <mxCell id="V3Wwiagqi8VHm06WQAAS-1" value="Links" style="" parent="0" />
-        <mxCell id="V3Wwiagqi8VHm06WQAAS-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+        <mxCell id="V3Wwiagqi8VHm06WQAAS-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="545.5" y="738" />
@@ -1796,7 +1796,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="V3Wwiagqi8VHm06WQAAS-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;" edge="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+        <mxCell id="V3Wwiagqi8VHm06WQAAS-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;" parent="V3Wwiagqi8VHm06WQAAS-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="785.5" y="660" />
@@ -1805,10 +1805,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="V3Wwiagqi8VHm06WQAAS-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;strokeWidth=2;" edge="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+        <mxCell id="V3Wwiagqi8VHm06WQAAS-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="V3Wwiagqi8VHm06WQAAS-48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=1 1;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+        <mxCell id="V3Wwiagqi8VHm06WQAAS-48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=1 1;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="V3Wwiagqi8VHm06WQAAS-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="995.5" y="180" as="sourcePoint" />
             <Array as="points">
@@ -1817,37 +1817,57 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="V3Wwiagqi8VHm06WQAAS-49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;strokeWidth=2;" edge="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+        <mxCell id="V3Wwiagqi8VHm06WQAAS-49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="(3.0.x)" link="https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x#pid-control-at-zero-throttle" id="V3Wwiagqi8VHm06WQAAS-52">
-          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" vertex="1">
             <mxGeometry x="500" y="210" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="(3.4)" link="https://github.com/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4#throttle-boost" id="V3Wwiagqi8VHm06WQAAS-53">
-          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" vertex="1">
             <mxGeometry x="510" y="80" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="(4.2)" link="https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#rc-smoothing-improvements" id="V3Wwiagqi8VHm06WQAAS-58">
-          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" vertex="1">
             <mxGeometry x="600" y="260" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="(3.4)" link="https://github.com/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4#filter-based-rc-smoothing" id="V3Wwiagqi8VHm06WQAAS-59">
-          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" vertex="1">
             <mxGeometry x="600" y="285" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="(3.0.x)" link="https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x" id="V3Wwiagqi8VHm06WQAAS-60">
-          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" vertex="1">
             <mxGeometry x="645" y="345" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="(3.1)" link="https://github.com/betaflight/betaflight/wiki/BetaFlight-V3.1.x" id="V3Wwiagqi8VHm06WQAAS-61">
-          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" vertex="1">
             <mxGeometry x="645" y="365" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.1)" link="https://github.com/betaflight/betaflight/wiki/Feed-Forward-2.0" id="2g9_uXjhMqqWqmVWnMq5-0">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1000" y="260" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.2)" link="https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#smoothness-ff_smooth_factor" id="2g9_uXjhMqqWqmVWnMq5-1">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1145" y="345" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.2)" link="https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#boost-ff_boost" id="2g9_uXjhMqqWqmVWnMq5-2">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="930" y="345" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.2)" link="https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#spike-limiting-ff_spike_limit" id="2g9_uXjhMqqWqmVWnMq5-3">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;arcSize=0;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1050" y="120" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
       </root>
