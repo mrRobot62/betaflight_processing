@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-11T11:55:22.081Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15" etag="lJKshI0QEK32HqqH7FZa" compressed="false" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-11T11:58:41.980Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15" etag="yGcP2WUe25zlGnc5jGEv" compressed="false" version="13.7.9" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="542" dy="372" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -1999,7 +1999,7 @@
         </mxCell>
         <UserObject label="(4.2)" link="https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#rc-smoothing-improvements" id="Fr3_4MNedqBWVEZfUDKE-24">
           <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
-            <mxGeometry x="1425" y="35" width="30" height="15" as="geometry" />
+            <mxGeometry x="1420" y="35" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
       </root>
