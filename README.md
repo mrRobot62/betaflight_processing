@@ -27,8 +27,9 @@ Layers are not available on PDF-Files
 
 Online editor for drawio files: [https://app.diagrams.net/](https://app.diagrams.net/)
 
-## Note : PIDToolBox German Wiki
+# Rund um Betaflight in Deutsch
+## PIDToolBox German Wiki
 [Deutsche Übersetzung von PIDToolbox](https://github.com/mrRobot62/PIDtoolbox)
 
-# Some german docs around Betaflight (mostly for beginners ;-) )
+## Some german docs around Betaflight (mostly for beginners ;-) )
 [Einige deutsche Dokumente zu Betaflight](https://github.com/mrRobot62/lunax.betaflight.doc)
