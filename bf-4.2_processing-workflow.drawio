@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-11T11:28:25.198Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15" etag="P6VAElQPg6g3IRae69TQ" compressed="false" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-11T11:34:21.064Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15" etag="1xrql-NGcrYB3Hw6QkVQ" compressed="false" version="13.7.9" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="449" dy="308" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -1985,6 +1985,24 @@
             <mxGeometry x="1410" y="925" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
+        <UserObject label="(4.2)" link="https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#improved-dynamic-notch-filter" id="Fr3_4MNedqBWVEZfUDKE-20">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;strokeColor=#996185;strokeWidth=2;perimeterSpacing=0;glass=0;sketch=0;shadow=0;gradientColor=#CDA2BE;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="380" y="750" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.2)" link="https://github.com/betaflight/betaflight/wiki/4.2-Tuning-Notes#iterm-relax-works-properly-in-setpoint-mode" id="Fr3_4MNedqBWVEZfUDKE-21">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;strokeColor=#996185;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#CDA2BE;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1260" y="655" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(3.1)" link="https://github.com/betaflight/betaflight/wiki/BetaFlight-V3.1.x#anti_gravity" id="Fr3_4MNedqBWVEZfUDKE-22">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;arcSize=0;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1155" y="655" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Fr3_4MNedqBWVEZfUDKE-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="V3Wwiagqi8VHm06WQAAS-1" source="Fr3_4MNedqBWVEZfUDKE-22" target="Fr3_4MNedqBWVEZfUDKE-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
