@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-11T10:06:46.841Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15" etag="x8QcHzusBFowN3Uk_F80" compressed="false" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-11T11:28:25.198Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15" etag="P6VAElQPg6g3IRae69TQ" compressed="false" version="13.7.9" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="449" dy="308" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -1303,7 +1303,7 @@
         <mxCell id="RRmi2E0ESLORfeHLpEnP-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="RuyqhTZgdlnSvw2_jLQb-265" source="RuyqhTZgdlnSvw2_jLQb-554" target="RuyqhTZgdlnSvw2_jLQb-267" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RuyqhTZgdlnSvw2_jLQb-554" value="Dynamic idle (4.1)&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;will only work with RPM-Filter enabled&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=12;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
+        <mxCell id="RuyqhTZgdlnSvw2_jLQb-554" value="Dynamic idle&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;will only work with RPM-Filter enabled&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=12;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
           <mxGeometry x="1330" y="780" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="RuyqhTZgdlnSvw2_jLQb-557" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=0;strokeWidth=4;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF9933;" parent="RuyqhTZgdlnSvw2_jLQb-265" target="RuyqhTZgdlnSvw2_jLQb-546" edge="1">
@@ -1629,7 +1629,7 @@
         <mxCell id="g67AhoWZ7yQ4Yo5j12dU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="RuyqhTZgdlnSvw2_jLQb-265" source="g67AhoWZ7yQ4Yo5j12dU-0" target="RuyqhTZgdlnSvw2_jLQb-399" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="g67AhoWZ7yQ4Yo5j12dU-0" value="&lt;span style=&quot;font-size: 10px&quot;&gt;Dmin / Dmax (4.0)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=12;strokeColor=#FF99CC;strokeWidth=2;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
+        <mxCell id="g67AhoWZ7yQ4Yo5j12dU-0" value="&lt;span style=&quot;font-size: 10px&quot;&gt;Dmin / Dmax&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=12;strokeColor=#FF99CC;strokeWidth=2;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
           <mxGeometry x="1019" y="850" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wrLxzU4FurYHL5yjtna0-7" value="accelerationLimits" style="swimlane;startSize=20;fontSize=10;align=center;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
@@ -1958,6 +1958,31 @@
         <UserObject label="(3.4)" link="https://github.com/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4#do-i-need-to-change-airmode-settings" id="Fr3_4MNedqBWVEZfUDKE-14">
           <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
             <mxGeometry x="900" y="170" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.2)" link="https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle" id="Fr3_4MNedqBWVEZfUDKE-15">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;strokeColor=#996185;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#CDA2BE;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1400" y="770" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.x)" link="https://github.com/betaflight/betaflight/wiki/Tuning-Dynamic-Idle#setup---enabling-dynamic-idle" id="Fr3_4MNedqBWVEZfUDKE-16">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;arcSize=0;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1280" y="795" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.x)" link="https://github.com/betaflight/betaflight/wiki/D_MIN" id="Fr3_4MNedqBWVEZfUDKE-17">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;strokeColor=#996185;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#CDA2BE;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1110" y="840" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.x)" link="https://github.com/betaflight/betaflight/wiki/d_min#what-about-the-d_min_advance-parameter" id="Fr3_4MNedqBWVEZfUDKE-18">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;arcSize=0;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1115" y="905" width="30" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="(4.x)" link="https://github.com/betaflight/betaflight/wiki/d_min#what-about-the-d_min_advance-parameter" id="Fr3_4MNedqBWVEZfUDKE-19">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;strokeColor=#996185;strokeWidth=2;fillColor=#FFFFFF;gradientColor=#CDA2BE;" vertex="1" parent="V3Wwiagqi8VHm06WQAAS-1">
+            <mxGeometry x="1410" y="925" width="30" height="15" as="geometry" />
           </mxCell>
         </UserObject>
       </root>
