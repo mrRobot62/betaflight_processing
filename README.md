@@ -26,3 +26,9 @@ At least you have to select ONE layer, if all layers are deactivated you have no
 Layers are not available on PDF-Files
 
 Online editor for drawio files: [https://app.diagrams.net/](https://app.diagrams.net/)
+
+## Note : PIDToolBox German Wiki
+[Deutsche Übersetzung von PIDToolbox](https://github.com/mrRobot62/PIDtoolbox)
+
+# Some german docs around Betaflight (mostly for beginners ;-) )
+[Einige deutsche Dokumente zu Betaflight](https://github.com/mrRobot62/lunax.betaflight.doc)
