@@ -11,6 +11,8 @@ We try to update this charts and overviews as soon as possible if a new betaflig
 
 | Version | Date | Comment |
 |---|---|---|
+|0.14b|13.10.2020| layout fixes - only in draw.io file |
+|0.14a|12.10.2020| small enhancements - only in draw.io file |
 |0.14|11.10.2020| insert helpful links to BF-Wiki pages |
 |0.13|17.08.2020| parameter adjustments, feedforward 2.0 |
 |0.12|15.08.2020| included layers and some corrections and an additional light version (as layer) is available |
