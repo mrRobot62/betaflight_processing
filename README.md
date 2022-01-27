@@ -31,7 +31,7 @@ Online editor for drawio files: [https://app.diagrams.net/](https://app.diagrams
 
 # Rund um Betaflight in Deutsch
 ## PIDToolBox German Wiki
-[Deutsche Übersetzung von PIDToolbox](https://github.com/mrRobot62/PIDtoolbox)
+Das deutsche Wiki der PIDToolbox ist umgezogen und findet man jetzt unter (https://betaflight.de/docs/knowledge-base/software/pidtoolbox/)[https://betaflight.de/docs/knowledge-base/software/pidtoolbox/] und wurde komplett überarbeitet.
+Weiterhin finden man auf der Webseite sehr viele hilfreiche Informationen
 
-## Some german docs around Betaflight (mostly for beginners ;-) )
-[Einige deutsche Dokumente zu Betaflight](https://github.com/mrRobot62/lunax.betaflight.doc)
+(die im Unterverzeichnis doc enthaltenen Dokumente sind teilweise deprecated und wurden in Teilen auch auf betaflight.de übernommen)
