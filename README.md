@@ -34,4 +34,5 @@ Online editor for drawio files: [https://app.diagrams.net/](https://app.diagrams
 Das deutsche Wiki der PIDToolbox ist umgezogen und findet man jetzt unter (https://betaflight.de/docs/knowledge-base/software/pidtoolbox/)[https://betaflight.de/docs/knowledge-base/software/pidtoolbox/] und wurde komplett überarbeitet.
 Weiterhin finden man auf der Webseite sehr viele hilfreiche Informationen
 
+## doc folder in diesem Git (deprecated)
 (die im Unterverzeichnis doc enthaltenen Dokumente sind teilweise deprecated und wurden in Teilen auch auf betaflight.de übernommen)
