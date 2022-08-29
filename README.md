@@ -8,7 +8,9 @@ We try to update this charts and overviews as soon as possible if a new betaflig
 To get the latest processing & signal workflow diagram, please change to the 4.3 branch
 Currently the master branch contains only the latest 4.2 information
 
+[Betaflight 4.3](https://github.com/mrRobot62/betaflight_processing/blob/BF4.3/README.md)
 
+# 4.2 Branch
 ![BF 4.2 latest graph version](https://github.com/mrRobot62/betaflight_processing/blob/master/bf-4.2_processing-workflow.svg)
 (based on BF 4.2)
 
