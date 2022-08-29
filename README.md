@@ -4,13 +4,14 @@ This repository contain only processing charts and some additional documents (mo
 
 We try to update this charts and overviews as soon as possible if a new betaflight release is available
 
-![BF 4.2 latest graph version](https://github.com/mrRobot62/betaflight_processing/blob/master/bf-4.2_processing-workflow.svg)
-(based on BF 4.2)
+![BF 4.3 latest graph version](https://github.com/mrRobot62/betaflight_processing/blob/BF4.3/bf-4.3_processing-workflow.drawio.svg)
+(based on BF 4.3)
 
 
 
 | Version | Date | Comment |
 |---|---|---|
+|0.15.0|29.08.2022| BF 4.3 initial version|
 |0.14b|13.10.2020| layout fixes - only in draw.io file |
 |0.14a|12.10.2020| small enhancements - only in draw.io file |
 |0.14|11.10.2020| insert helpful links to BF-Wiki pages |
@@ -30,9 +31,3 @@ Layers are not available on PDF-Files
 Online editor for drawio files: [https://app.diagrams.net/](https://app.diagrams.net/)
 
 # Rund um Betaflight in Deutsch
-## PIDToolBox German Wiki
-Das deutsche Wiki der PIDToolbox ist umgezogen und findet man jetzt unter (https://betaflight.de/docs/knowledge-base/software/pidtoolbox/)[https://betaflight.de/docs/knowledge-base/software/pidtoolbox/] und wurde komplett überarbeitet.
-Weiterhin finden man auf der Webseite sehr viele hilfreiche Informationen
-
-## doc folder in diesem Git (deprecated)
-(die im Unterverzeichnis doc enthaltenen Dokumente sind teilweise deprecated und wurden in Teilen auch auf betaflight.de übernommen)
