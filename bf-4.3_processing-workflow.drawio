@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-30T21:54:18.008Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.1 Safari/605.1.15" etag="ZWeRK7PIppcGjVqypiPQ" compressed="false" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-30T22:03:33.487Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.6.1 Safari/605.1.15" etag="rwVKuf9z8GV10rcbhevZ" compressed="false" version="20.2.7" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="692" dy="414" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -1382,17 +1382,6 @@
             <mxPoint x="460" y="108" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RuyqhTZgdlnSvw2_jLQb-474" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeColor=#7EA6E0;strokeWidth=4;fontSize=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#7EA6E0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="RuyqhTZgdlnSvw2_jLQb-265" source="RuyqhTZgdlnSvw2_jLQb-481" target="RuyqhTZgdlnSvw2_jLQb-482" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="460" y="195.5" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="360" y="186" />
-              <mxPoint x="390" y="186" />
-              <mxPoint x="390" y="240" />
-            </Array>
-            <mxPoint x="330" y="195.5" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="RuyqhTZgdlnSvw2_jLQb-476" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=0;strokeColor=#7EA6E0;strokeWidth=4;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="RuyqhTZgdlnSvw2_jLQb-265" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -1405,9 +1394,6 @@
         </mxCell>
         <mxCell id="RuyqhTZgdlnSvw2_jLQb-481" value="smoothing" style="whiteSpace=wrap;html=1;fontSize=12;fillColor=none;strokeWidth=3;strokeColor=#D4E1F5;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
           <mxGeometry x="280" y="140" width="80" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="RuyqhTZgdlnSvw2_jLQb-482" value="PID at zero&amp;nbsp;&lt;br&gt;throttle" style="whiteSpace=wrap;html=1;fontSize=12;fillColor=none;strokeColor=#D4E1F5;strokeWidth=3;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
-          <mxGeometry x="420" y="220" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="RuyqhTZgdlnSvw2_jLQb-488" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeWidth=3;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#7EA6E0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="RuyqhTZgdlnSvw2_jLQb-265" source="RuyqhTZgdlnSvw2_jLQb-421" target="RuyqhTZgdlnSvw2_jLQb-477" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -1661,8 +1647,11 @@
         <mxCell id="xxNjnLdzqKyFmMv8Wuvl-130" value="d/dt" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;fontSize=12;strokeColor=#000000;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1">
           <mxGeometry x="620" y="748" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="xxNjnLdzqKyFmMv8Wuvl-139" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=20;fontColor=default;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;strokeWidth=2;" parent="RuyqhTZgdlnSvw2_jLQb-265" source="RuyqhTZgdlnSvw2_jLQb-482" target="RuyqhTZgdlnSvw2_jLQb-482" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="xxNjnLdzqKyFmMv8Wuvl-139" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=20;fontColor=default;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#000000;strokeWidth=2;" parent="RuyqhTZgdlnSvw2_jLQb-265" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="260" as="sourcePoint" />
+            <mxPoint x="470" y="260" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="xxNjnLdzqKyFmMv8Wuvl-148" value="R/P/Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=default;" parent="RuyqhTZgdlnSvw2_jLQb-265" vertex="1" connectable="0">
           <mxGeometry x="590.0019402985075" y="748" as="geometry">
@@ -1922,11 +1911,6 @@
         <mxCell id="V3Wwiagqi8VHm06WQAAS-49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <UserObject label="(3.0.x)" link="https://github.com/betaflight/betaflight/wiki/BetaFlight-3.0.x#pid-control-at-zero-throttle" id="V3Wwiagqi8VHm06WQAAS-52">
-          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" vertex="1">
-            <mxGeometry x="510" y="210" width="30" height="15" as="geometry" />
-          </mxCell>
-        </UserObject>
         <UserObject label="(3.4)" link="https://github.com/betaflight/betaflight/wiki/Tuning-Tips-for-Betaflight-3.4#throttle-boost" id="V3Wwiagqi8VHm06WQAAS-53">
           <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;strokeWidth=2;" parent="V3Wwiagqi8VHm06WQAAS-1" vertex="1">
             <mxGeometry x="510" y="135" width="30" height="15" as="geometry" />
