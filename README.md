@@ -13,7 +13,7 @@ Currently the master branch contains only the latest 4.2 information
 ## Special Thanks
 Thanks to @hdavid (mots#4841) , he did a lot of re-engineering of the diagram.
 
-![BF 4.3 latest graph version]()
+![BF 4.3 latest graph version](https://github.com/mrRobot62/betaflight_processing/blob/BF4.3/bf-4.3_processing-workflow.drawio.svg)
 (based on BF 4.3)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
