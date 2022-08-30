@@ -8,9 +8,9 @@ We try to update this charts and overviews as soon as possible if a new betaflig
 (based on BF 4.3)
 
 
-
 | Version | Date | Comment |
 |---|---|---|
+|0.15.1|30.08.2022| BF 4.3 pidsum_limit included, RPM-Filter position corrected|
 |0.15.0|29.08.2022| BF 4.3 initial version|
 |0.14b|13.10.2020| layout fixes - only in draw.io file |
 |0.14a|12.10.2020| small enhancements - only in draw.io file |
@@ -31,3 +31,4 @@ Layers are not available on PDF-Files
 Online editor for drawio files: [https://app.diagrams.net/](https://app.diagrams.net/)
 
 # Rund um Betaflight in Deutsch
+On [Betaflight.de](https://betaflight.de) more interesting information in German
