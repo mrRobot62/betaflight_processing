@@ -1,11 +1,15 @@
 # Betaflight Processing & workflow charts / diagrams
 This repository contain only processing charts and some additional documents (mostly written in German) for 
 ![](https://github.com/betaflight/betaflight/blob/master/docs/assets/images/bf_logo.png)
-
 We try to update this charts and overviews as soon as possible if a new betaflight release is available
 
+For German readers I recommend to visit [Betaflight.de](https://betaflight.de)
 # 4.3 Branch
-To get the latest processing & signal workflow diagram, please change to the 4.3 branch
+To get the latest processing & signal workflow diagram, please change to the 4.3 branch.
+
+> **Note:** 
+This version contains for parameters and for release notes links. To work with this links, open the diagram as an own tab in your browser. Now it's possible to jump directly to appropriate BF-wiki pages.
+
 Currently the master branch contains only the latest 4.2 information
 
 [Betaflight 4.3](https://github.com/mrRobot62/betaflight_processing/blob/BF4.3/README.md)
@@ -25,8 +29,7 @@ Thanks to @hdavid (mots#4841) , he did a lot of re-engineering of the diagram.
 
 | Version | Date | Comment |
 |---|---|---|
-|0.15.2|31.08.2022| RC1 |
-|0.15.1|30.08.2022| some improvements (pid_sum), typos, rpm_filter, ...|
+|0.15.1|31.08.2022| some improvements (pid_sum), typos, rpm_filter, ...|
 |0.15.0|29.08.2022| initial changes for BF 4.3 |
 |0.14b|13.10.2020| layout fixes - only in draw.io file |
 |0.14a|12.10.2020| small enhancements - only in draw.io file |
