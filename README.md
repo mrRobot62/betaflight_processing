@@ -22,7 +22,7 @@ Thanks to @hdavid (mots#4841) , he did a lot of re-engineering of the diagram.
 
 | Version | Date | Comment |
 |---|---|---|
-|0.15.3|03.09.2022| note layer always same color ...|
+|0.15.3|03.09.2022| release note layer always same color ...|
 |0.15.2|02.09.2022| layer, new release notes layer, some beautification, ...|
 |0.15.1|31.08.2022| some improvements (pid_sum), typos, rpm_filter, ...|
 |0.15.0|29.08.2022| initial changes for BF 4.3 |
