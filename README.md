@@ -8,7 +8,7 @@ For German readers I recommend to visit [Betaflight.de](https://betaflight.de)
 To get the latest processing & signal workflow diagram, please change to the 4.3 branch.
 
 > **Note:** 
-This version contains for parameters and for release notes links. To work with this links, open the diagram as an own tab in your browser. Now it's possible to jump directly to appropriate BF-wiki pages.
+This version contains links for **parameters** and for **release notes**. To work with this links, open the diagram as `svg` in an own tab in your browser. If you click on a link you jump directly to an appropriate BF-wiki pages.
 
 Currently the master branch contains only the latest 4.2 information
 
@@ -20,15 +20,10 @@ Thanks to @hdavid (mots#4841) , he did a lot of re-engineering of the diagram.
 ![BF 4.3 latest graph version](https://github.com/mrRobot62/betaflight_processing/blob/BF4.3/bf-4.3_processing-workflow.drawio.svg)
 (based on BF 4.3)
 
-----------------------------------------------------------------------------------------------------------------------------------------
-# 4.2 Branch
-![BF 4.2 latest graph version](https://github.com/mrRobot62/betaflight_processing/blob/master/bf-4.2_processing-workflow.svg)
-(based on BF 4.2)
-
-
-
 | Version | Date | Comment |
 |---|---|---|
+|0.15.3|03.09.2022| note layer always same color ...|
+|0.15.2|02.09.2022| layer, new release notes layer, some beautification, ...|
 |0.15.1|31.08.2022| some improvements (pid_sum), typos, rpm_filter, ...|
 |0.15.0|29.08.2022| initial changes for BF 4.3 |
 |0.14b|13.10.2020| layout fixes - only in draw.io file |

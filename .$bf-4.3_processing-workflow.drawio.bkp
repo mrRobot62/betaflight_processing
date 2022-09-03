@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2022-09-02T21:40:19.656Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.2.3 Chrome/102.0.5005.167 Electron/19.0.11 Safari/537.36" etag="6fAtZH3nj9K2oRS7ozYw" compressed="false" version="20.2.3" type="device">
+<mxfile host="Electron" modified="2022-09-02T21:35:02.748Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.2.3 Chrome/102.0.5005.167 Electron/19.0.11 Safari/537.36" etag="SQ2-OK0nkqoHmibgpIpW" compressed="false" version="20.2.3" type="device">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="998" dy="606" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -2172,7 +2172,7 @@
           <mxGeometry x="1305" y="365" width="155" height="45" as="geometry" />
         </mxCell>
         <mxCell id="AxOSLE8Ii4Tv_HrbMb5V-80" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;fontColor=#808080;strokeColor=#808080;strokeWidth=1;fillColor=none;gradientColor=none;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-          <mxGeometry x="1245" y="100" width="195" height="145" as="geometry" />
+          <mxGeometry x="1275" y="100" width="165" height="145" as="geometry" />
         </mxCell>
         <UserObject label="Linear dyn mixer options" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#linear-and-dynamic-mixer-options" id="AxOSLE8Ii4Tv_HrbMb5V-42">
           <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
@@ -2223,7 +2223,7 @@
         </UserObject>
         <UserObject label="RPM crossfading" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#rpm-crossfading" id="AxOSLE8Ii4Tv_HrbMb5V-52">
           <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="250" y="476" width="115" height="15" as="geometry" />
+            <mxGeometry x="250" y="474" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Multi dynamic notch" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#multi-dynamic-notch" id="AxOSLE8Ii4Tv_HrbMb5V-53">
@@ -2233,12 +2233,12 @@
         </UserObject>
         <UserObject label="Dyn Gyro expo curve" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#dynamic-gyro-filter-expo-curve" id="AxOSLE8Ii4Tv_HrbMb5V-54">
           <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="250" y="486.5" width="115" height="15" as="geometry" />
+            <mxGeometry x="250" y="483.5" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="PT2/PT3 LPF filter options" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#pt2-and-pt3-lowpass-filtering-options" id="AxOSLE8Ii4Tv_HrbMb5V-55">
           <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="250" y="498.5" width="115" height="15" as="geometry" />
+            <mxGeometry x="250" y="494.5" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="4.3&#xa;Release notes" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes" id="AxOSLE8Ii4Tv_HrbMb5V-57">
@@ -2248,7 +2248,7 @@
         </UserObject>
         <UserObject label="FF jitter reduction" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#Feedforward-jitter-reduction" id="AxOSLE8Ii4Tv_HrbMb5V-58">
           <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="827" y="455.5" width="115" height="15" as="geometry" />
+            <mxGeometry x="827" y="454.5" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="FF in level and horizon " link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#feedforward-in-level-and-horizon-modes" id="AxOSLE8Ii4Tv_HrbMb5V-59">
@@ -2258,12 +2258,12 @@
         </UserObject>
         <UserObject label="FF other improvements" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#Other-feedforward-improvements" id="AxOSLE8Ii4Tv_HrbMb5V-61">
           <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="827" y="466.5" width="115" height="15" as="geometry" />
+            <mxGeometry x="827" y="464.5" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Anti gravity improvement" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#AntiGravity-improvements" id="AxOSLE8Ii4Tv_HrbMb5V-66">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="105.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="105.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="4.3&#xa;Release notes&#xa;(additional)" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes" id="AxOSLE8Ii4Tv_HrbMb5V-67">
@@ -2272,43 +2272,43 @@
           </mxCell>
         </UserObject>
         <UserObject label="Actual Rates as default" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#Actual-Rates-as-the-new-Betaflight-default" id="AxOSLE8Ii4Tv_HrbMb5V-69">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="120.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="120.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Crossfire &amp; Ghost improvements" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#CrossfireV3-and-Ghost-RC-link-improvements" id="AxOSLE8Ii4Tv_HrbMb5V-70">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="135.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="135.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="FrSky OSD fixes" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#Frsky-OSD-fix" id="AxOSLE8Ii4Tv_HrbMb5V-71">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="150.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="150.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Lua script updates" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#Lua-script-updates" id="AxOSLE8Ii4Tv_HrbMb5V-72">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="165.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="165.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="PT3-based-RC-smoothing" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#PT3-based-RC-smoothing" id="AxOSLE8Ii4Tv_HrbMb5V-73">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="180.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="180.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="More accurate loop times" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#More-accurate-loop-times" id="AxOSLE8Ii4Tv_HrbMb5V-74">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="195.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="195.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="Presets" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#Presets" id="AxOSLE8Ii4Tv_HrbMb5V-75">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="210.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="210.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="New tuning sliders" link="https://github.com/betaflight/betaflight/wiki/4.3-Tuning-Notes#New-tuning-sliders" id="AxOSLE8Ii4Tv_HrbMb5V-76">
-          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=12;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
-            <mxGeometry x="1245" y="225.00000000000003" width="115" height="15" as="geometry" />
+          <mxCell style="fontColor=#808080;fontStyle=4;rounded=1;overflow=hidden;spacing=10;shadow=0;dashed=1;dashPattern=1 1;labelBackgroundColor=none;sketch=0;fillStyle=solid;fontFamily=Helvetica;fontSize=10;strokeColor=none;strokeWidth=1;fillColor=none;html=0;align=left;verticalAlign=middle;" vertex="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
+            <mxGeometry x="1270" y="225.00000000000003" width="115" height="15" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="AxOSLE8Ii4Tv_HrbMb5V-104" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=8;fontColor=#808080;strokeWidth=2;dashed=1;dashPattern=1 1;endArrow=halfCircle;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#808080;" edge="1" parent="AxOSLE8Ii4Tv_HrbMb5V-40">
